@@ -2,16 +2,16 @@
 ## 1\.1 文件路径（地址）
 ### 什么是文件路径：
 他是表示计算机文件存放位置的字符串，我们区分文件既需要文件名称，也需要文件路径。
-![alt text](picture\path1.png)
+![alt text](.\picture\path1.png)
 我们在“此电脑”里面随便点开一个文件，上方都有一个地址栏，我们点击地址栏就会得到这个文件的路径。
 
-![alt text](picture\path2.png)
+![alt text](.\picture\path2.png)
 例如：D:\software\qq 就是qq文件夹的文件路径，我们可以在该文件中找到软件相关的文件
 在计算机学习和使用过程中应该养成文件分类放的良好计算机使用习惯，方便我们查找。
 >如：分别创建应用软件文件夹和游戏文件夹，每次在安装后手动选择安装的路径。把QQ微信等 聊天记录保存地址在软件设置中改到其他盘符，避免占用C盘空间等。
 
 这里推荐一个插件：Listary  [点击进入官网](https://www.listary.com/)
-![listary文件管理助手](picture\listary展示.png)
+![listary文件管理助手](.\picture\listary展示.png)
 这些小插件基本不太占用内存，一般都是开机自启动
 ```
    双击键盘的ctrl按键即可快速弹出搜索框，搜索速度比windows快
