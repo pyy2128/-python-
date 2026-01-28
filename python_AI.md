@@ -348,7 +348,7 @@ capitalize() 首字母大写
 tittle() 每个字母首字符大写
 lower() 所有字母小写
 upper() 所有字母大写
-strip() 去除空格
+strip() 去除空字符，包括空格，回车，制表符等
 lstrip() 去除左边空格
 rstrip() 去除右边空格
 split() 分割字符串
@@ -700,3 +700,57 @@ json
 sys
 request
 
+
+# python高级
+## 正则表达式
+### 正则表达式的格式
+pattern的格式
+位置
+\^       匹配字符串的开头
+\$        匹配字符串的结尾
+\^\$  从头到尾
+字符串个数
+\* 任意个数
+? 0个或者1个
+\+ 至少一个
+{n} n个
+{n,}至少n个
+{n,m}n到m个
+匹配字符集合
+[]要匹配的字符串放到里面
+[\^] 取反
+[a\-z] 从什么到什么（按照阿斯克编码）
+|
+
+
+分组
+()把重复出现的分组
+(?\:)取反
+断言
+x(?=y)先行断言
+x(?!y)先行否定断言
+(?<=y)x 后行断言
+(?<!)x 后行否定断言
+
+### re库
+pattern 是什么？
+pattern 模式: 用于正则表达式匹配字符串的模板
+re.match() 从头开始匹配
+ re.Match 类
+   .group()
+   .regs
+   .groups() 返回圆括号内分组的内容
+ re.fullmatch() 从头到尾完全匹配
+ re.search() 匹配整个字符串
+ re.findall()
+ re.finditer()
+ re.sub() 替换匹配结果
+ re.subn() 替换，并返回替换个数
+ re.split() 分割字符串
+ re.compile() 构造正则表达式对象，可以使用实例方法进行匹配，多用于对象复用
+ 旗标 flag:
+   re.IGNORECASE: 忽略大小写
+   re.ASCII: ascii 码匹配，不是 ascii 码的字符不会匹配，例如中文
+   re.UNICODE: unicode 码匹配
+   re.MULTILINE: 当有 ^ $ 匹配时，不是以整个字符串作为开头结尾来匹配，而是使用每一行来匹配开头和结尾
+re.DOTALL: . 点运算符本来不能匹配换行符，使用该旗标则可以匹配所有字符包括换行符
