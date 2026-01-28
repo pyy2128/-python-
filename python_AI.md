@@ -34,15 +34,7 @@
 
 3. 可执行 / 安装类文件
 * <span style="color:red;">.exe：Windows 系统下的可执行文件，双击可运行程序（如软件安装包、应用程序）。</span>
-* .msi：Windows 安装包文件，用于软件的标准化安装、卸载。
-* .dmg：MacOS 系统下的磁盘映像文件，常用于软件安装。
 
-4. 配置 / 日志类文件
-* .ini：Windows 系统的配置文件，以键值对形式存储程序配置。
-* .conf/.config：通用的配置文件格式，常用于 Linux / 编程场景的程序配置。
-* .log：日志文件，存储程序运行、系统操作的记录信息，便于排查问题。
-
-## 1.3  cmd
 一、CMD 基础认知
 &nbsp;&nbsp;&nbsp;&nbsp;CMD（Command Prompt）是 Windows 系统自带的命令行工具，通过文本指令完成操作，相比图形界面（GUI），能更高效地执行批量、重复任务，默认存放路径为 C:\Windows\System32\cmd.exe。
 二、CMD 启动方式
